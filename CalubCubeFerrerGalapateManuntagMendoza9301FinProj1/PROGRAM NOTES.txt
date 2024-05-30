@@ -1,0 +1,12 @@
+Program Notes:
+
+Analogy for Map usage:
+
+	Imagine a filing cabinet: 
+	1. coursesByYear - top level folders; labeled by year
+	2. termMap - subfolders of coursesByYear; labeled by term number
+	3. courseList - the documents stored in the termMap
+
+    Initially, the sorting per term and per year was based of a stupid for loop iterating through specific indexes of an ArrayList within a term.
+    we figured that it would be very inefficient to implement that every time, and found that utilizing a nested HashMap would be a good solution
+    for using the year and term as the keys, and the other objects/data as our values.
